@@ -32,7 +32,7 @@ function Home() {
     return () => {
       if (homeRef.current) observer.unobserve(homeRef.current);
     };
-  }, []);
+  }, [homeRef.current]);
 
   return (
     <Section
