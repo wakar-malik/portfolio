@@ -10,12 +10,12 @@ function ImgCard({ src, title, alt, className, liveUrl, githubUrl }) {
     <Card className={`${styles.imgCard} ${className}`}>
       <div className={styles.imgCardImgContainer}>
         <div className={styles.imgCardOverlay}>
-          <a href={githubUrl} target="_blank" title="Github">
+          {/* <a href={githubUrl} target="_blank" title="Github">
             <RiGithubFill color="var(--bgGreen)" size={40} />
           </a>
           <a href={liveUrl} target="_blank" title="Live">
             <RiExternalLinkFill color="var(--bgGreen)" size={40} />
-          </a>
+          </a> */}
         </div>
         <Image src={src} alt={alt} className={styles.imgCardImg} />
       </div>

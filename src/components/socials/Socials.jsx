@@ -7,31 +7,31 @@ function Socials() {
   return (
     <div className={styles.socialContainer}>
       <Card className={styles.socialCard}>
-        <a
+        {/* <a
           href="https://www.linkedin.com/in/wakar-malik/"
           className={styles.socialIcon}
           target="_blank"
         >
           <RiLinkedinBoxFill />
-        </a>
+        </a> */}
       </Card>
       <Card className={styles.socialCard}>
-        <a
+        {/* <a
           href="https://github.com/wakar-malik"
           className={styles.socialIcon}
           target="_blank"
         >
           <RiGithubFill className={styles.socialIcon} />
-        </a>
+        </a> */}
       </Card>
       <Card className={styles.socialCard}>
-        <a
+        {/* <a
           href="https://twitter.com/WakarMalik12"
           className={styles.socialIcon}
           target="_blank"
         >
           <RiTwitterFill className={styles.socialIcon} />
-        </a>
+        </a> */}
       </Card>
     </div>
   );
