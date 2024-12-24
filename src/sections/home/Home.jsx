@@ -24,15 +24,16 @@ function Home() {
   };
 
   useEffect(() => {
+    const homeRefValue = homeRef.current;
     const observer = new IntersectionObserver(
       navIntersectHandler,
       navIntersectOption
     );
-    observer.observe(homeRef.current);
+    observer.observe(homeRefValue);
     return () => {
-      if (homeRef.current) observer.unobserve(homeRef.current);
+      if (homeRefValue) observer.unobserve(homeRefValue);
     };
-  }, [homeRef.current]);
+  }, [navIntersectOption]);
 
   return (
     <Section
